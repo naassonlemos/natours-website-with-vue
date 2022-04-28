@@ -35,9 +35,9 @@ export default {
   computed: {
     buttonStyles() {
       if (this.type === "white") {
-        return "btn btn-white btn-animated";
+        return "btn btn--white btn--animated";
       } else if (this.type === "green") {
-        return "btn btn-green";
+        return "btn btn--green";
       } else return this.type;
     },
   },
@@ -45,7 +45,7 @@ export default {
 </script>
 
 <style scoped>
-.btn:link,
+/* .btn:link,
 .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -107,5 +107,5 @@ export default {
 .btn-animated {
   animation: moveInBottom 0.5s ease-out 0.75s;
   animation-fill-mode: backwards;
-}
+} */
 </style>
